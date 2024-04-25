@@ -1,0 +1,111 @@
+.foot {
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+.foot img {
+  height: 7rem;
+  margin: 2rem 0;
+}
+
+.foot p {
+  padding-top: 1rem;
+  white-space: nowrap;
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 550px) {
+  .foot {
+    padding-top: 3rem;
+  }
+}
+
+.Footer {
+  color: #fff;
+  padding: 4.5rem 0px 0 5rem;
+}
+.Question > h3 {
+  font-family: "Open Sans", sans-serif;
+  margin: 2rem 0 2rem 0.2rem;
+}
+.Note > p {
+  font-family: "Open Sans", sans-serif;
+  margin: 2rem 0 2rem 0.4rem;
+}
+a {
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  color: #fff;
+  padding: 0.5rem;
+}
+.logo {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+.social-link {
+  transition: transform 800ms;
+}
+.social-link:hover {
+  font-size: 1.8rem;
+  opacity: 1;
+}
+.CopyRight {
+  font-family: "Arvo", serif;
+  text-align: center;
+  margin-top: 1rem;
+  padding-bottom: 2rem;
+}
+@media (min-width: 100px) and (max-width: 380px) {
+  .Question > h3 {
+    font-size: 1rem;
+    margin: 2rem 0rem 2rem -3rem;
+  }
+  .Note > p {
+    font-size: 0.6rem;
+    margin: 2rem 0 2rem -3rem;
+  }
+  .logo {
+    font-size: 1rem;
+    margin: 0 0 1rem -5rem;
+  }
+
+  .CopyRight {
+    font-size: 0.7rem;
+    margin-left: -4.5rem;
+  }
+}
+@media (min-width: 381px) and (max-width: 480px) {
+  .Question > h3 {
+    font-size: 1rem;
+    margin: 2rem 0rem 2rem -3rem;
+  }
+  .Note > p {
+    font-size: 0.6rem;
+    margin: 2rem 0 2rem -3rem;
+  }
+  .logo {
+    font-size: 1rem;
+    margin: 0 0 1rem -5rem;
+  }
+
+  .CopyRight {
+    font-size: 0.7rem;
+    margin-left: -4.5rem;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .logo {
+    font-size: 1.5rem;
+    margin-left: -7rem;
+  }
+
+  .CopyRight {
+    font-size: 1rem;
+    margin-left: -6rem;
+  }
+}

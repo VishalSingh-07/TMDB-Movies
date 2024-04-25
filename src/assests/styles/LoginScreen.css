@@ -1,0 +1,145 @@
+.loginScreen {
+  position: relative;
+  height: 100%;
+  background: url("../Image/Netflix_Login_Background_2.jpg") center no-repeat;
+  /* -webkit-mask-image: radial-gradient(
+    ellipse farthest-side at 50% 50%,
+    #2c3e50,
+    rgba(0, 0, 0, 0.1)
+  ); */
+
+  background-size: cover;
+  text-align: center;
+}
+.loginScreen_gradient {
+  width: 100%;
+  z-index: 1;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(
+    to top,
+    rgba(24, 143, 212, 0.9) 0,
+    rgba(80, 226, 245, 0.1) 60%,
+    rgba(68, 161, 238, 0.8) 100%
+  );
+}
+.loginScreen_logo {
+  position: fixed;
+  left: 0;
+  top: 2rem;
+  width: 450px;
+  object-fit: contain;
+  padding-left: 20px;
+}
+
+.loginScreen_background > button {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+}
+
+.loginScreen_body {
+  position: absolute;
+  top: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  z-index: 1;
+  color: #fff;
+  padding: 20px;
+  left: 0;
+  right: 0;
+}
+.loginScreen_body > h1 {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1.5px;
+  font-size: 3.125rem;
+  margin-bottom: 20px;
+}
+.loginScreen_body > h2 {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1.5px;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.loginScreen_body > h3 {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1.5px;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+/* .loginScreen_Input {
+  margin: auto;
+  align-items: center;
+  padding-left:100rem;
+} */
+.loginScreen_Input {
+  position: fixed;
+  top: 60%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  width: 110%;
+}
+
+.loginScreen_Input > form > input {
+  font-family: "Arvo", serif;
+  font-size: 1rem;
+  padding: 10px 0 10px 20px;
+  letter-spacing: 2px;
+  outline-width: 0px;
+  height: 30px;
+  width: 50%;
+  border: none;
+  max-width: 600px;
+  border-radius: 10px 0rem 0rem 10px;
+  box-shadow: rgba(6, 141, 231, 0.6) 0 20px 30px -5px;
+}
+
+.loginScreen_Input > form {
+  display: flex;
+  align-items: center;
+}
+
+.loginScreen_Input > form > button {
+  border-radius: 0px 10px 10px 0px;
+}
+
+@media (min-width: 100px) and (max-width: 380px) {
+  .loginScreen_body > h1 {
+    font-size: 2rem;
+  }
+  .loginScreen_body > h2 {
+    font-size: 1.5rem;
+  }
+  .loginScreen_body > h3 {
+    font-size: 1rem;
+  }
+  .loginScreen_Input > form > input {
+    width: 42%;
+    font-size: 0.8rem;
+  }
+  .loginScreen_getStarted {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 381px) and (max-width: 460px) {
+  .loginScreen_body > h1 {
+    font-size: 2.2rem;
+  }
+  .loginScreen_body > h2 {
+    font-size: 1.7rem;
+  }
+  .loginScreen_body > h3 {
+    font-size: 1.1rem;
+  }
+  .loginScreen_Input > form > input {
+    width: 42%;
+    font-size: 0.8rem;
+  }
+  .loginScreen_getStarted {
+    font-size: 0.8rem;
+  }
+}

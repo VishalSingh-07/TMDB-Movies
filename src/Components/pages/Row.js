@@ -92,7 +92,8 @@ function Row({ Categorytitle, fetchURL, isLargeRow = false }) {
               <div
                 className='result-banner'
                 onClick={() => handleClick(movie)}
-                onMouseOver={() => handlehover(movie)}>
+                onMouseOver={() => handlehover(movie)}
+                onTouchStart={() => handlehover(movie)}>
                 <img
                   className={`row_poster ${isLargeRow && "row_posterLarge"}`}
                   key={movie.id}

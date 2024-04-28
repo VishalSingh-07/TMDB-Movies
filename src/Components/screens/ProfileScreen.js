@@ -12,6 +12,7 @@ function ProfileScreen() {
   const [products, setProducts] = useState([]);
   const [Loading, setLoading] = useState(false);
   const [subscription, setSubscription] = useState(null);
+  const currentDate = new Date();
   useEffect(() => {
     db.collection("customers")
       .doc(user.uid)
@@ -114,8 +115,8 @@ function ProfileScreen() {
               <button onClick={() => !isCurrentPackage && loadCheckout(productData.prices.priceId)}>
                 {isCurrentPackage
                   ? `Renews in ${parseInt(
-                      (subscription.current_period_end - subscription.current_period_start) /
-                        (24 * 60 * 60)
+                      Math.ceil(subscription.current_period_end * 1000 - currentDate.getTime()) /
+                        (24 * 60 * 60 * 1000)
                     )} day(s)`
                   : "Activate Now"}
               </button>
